@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Sign Up</title>
+</head>
+<body>
+
+<h1>Register a Restaurant Here</h1>
+
+<p>
+    <form action="{% url 'users:create_customer' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button type="submit">Register</button>
+    <input type="hidden" name="next" value="{% url 'users:dashboard' %}" />
+    </form>
+
+</p>
+</body>
+</html>

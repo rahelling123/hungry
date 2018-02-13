@@ -1,8 +1,10 @@
 from django.contrib import admin
 from django.urls import path
-from users.views import create_restaurant
+from users.views import create_customer, dashboard
 
 app_name = 'users'
-url_pattern = [
-    path('create_restaurant/', create_restaurant, name='create_user')
+
+urlpatterns = [
+    path('create_customer/', create_customer, name='create_customer'),
+    path('dashboard/', dashboard, name='dashboard'),
 ]

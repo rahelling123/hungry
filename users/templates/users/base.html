@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hungry</title>
+</head>
+<body>
+<a href="{% url 'index' %}">Homepage</a>
+<a href="{% url 'users:dashboard' %}">Dashboard</a>
+{#TODO create a dashboard that redirects to different spots depending on if you are restaurant or customer#}
+
+{% block content %}
+{% endblock %}
+
+
+</body>
+</html>

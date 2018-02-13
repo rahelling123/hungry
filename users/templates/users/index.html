@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Hungry?</title>
-</head>
-<body>
+{% extends 'users/base.html' %}
+
+{% block content%}
 <p>find great food here</p>
-</body>
-</html>
+<a href="{% url 'users:create_customer' %}">Customer Sign Up</a>
+{% endblock %}
