@@ -24,3 +24,9 @@ class Customer(models.Model):
 
     def __str__(self):
         return self.user.get_full_name()
+
+
+class Dog(models.Model):
+    name_dog = models.CharField(max_length=50)
+
+
