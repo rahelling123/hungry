@@ -8,4 +8,11 @@
     History<br>
     Etc.<br>
 
+    <br>
+    {% for dog in dog_list %}
+    {{ dog.name_dog }}<br>
+    {% endfor %}
+    <br>
+    {{ user.first_name }}
+
 {% endblock %}

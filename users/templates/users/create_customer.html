@@ -12,6 +12,7 @@
     <form action="{% url 'users:create_customer' %}" method="post">
     {% csrf_token %}
     {{ form.as_p }}
+    {{ form2.as_p }}
 
     <button type="submit">Register</button>
     <input type="hidden" name="next" value="{% url 'users:dashboard' %}" />
